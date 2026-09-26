@@ -31,6 +31,6 @@ def study_assistant(question,persona):
     description="Ask a question to get simple explanation from AI with analogies and real worls examples"
 )
   
-  demo.launch(debug=True)
+ demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
 
 
